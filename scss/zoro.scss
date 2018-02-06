@@ -5,31 +5,3 @@
 @import 'base/index';
 @import 'components/index';
 @import 'layout/index';
-
-body {
-  font-family: 'DIN Next W01 Light', Arial, sans-serif;
-}
-
-/* Typography */
-.din-bold {
-  font-family: 'DIN Next W01 Bold', Arial, sans-serif;
-}
-
-p {
-  font-size: 1.5em;
-
-  @include responsive(min-width, 1000px) {
-    font-size: 2.252em;
-  }
-}
-
-
-/* Hero */
-.hero {
-  background-image: url('../images/zoro-hero@2x.png');
-  background-size: cover;
-  /* height: 768px; */
-  height: 50vh;
-  display: flex;
-  background-repeat: no-repeat;
-}

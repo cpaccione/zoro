@@ -1,11 +1,26 @@
+
+/* Hero */
+.hero {
+  background-image: url('../images/zoro-hero.png');
+  background-size: cover;
+  /* height: 768px; */
+  height: 50vh;
+  display: flex;
+  background-repeat: no-repeat;
+}
+
 /* footer */
 .fist-bump {
   height: auto;
   background-color: #ffffff;
   color: #000000;
 
+  .wrap {
+    padding: 25px;
+  }
+
   @include responsive(min-width, 1000px) {
-    height: 768px;
+    height: 450px;
     display: flex;
     align-items: center;
   }
