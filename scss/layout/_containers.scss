@@ -1,0 +1,13 @@
+/* footer */
+.fist-bump {
+  height: auto;
+  background-color: #ffffff;
+  color: #000000;
+
+  @include responsive(min-width, 1000px) {
+    height: 768px;
+    display: flex;
+    align-items: center;
+  }
+
+}
