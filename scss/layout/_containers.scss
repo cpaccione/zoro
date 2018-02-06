@@ -1,20 +1,25 @@
 
 /* Hero */
 .hero {
-  background-image: url('../images/final-hero@2x.png');
+  background-image: url('../images/final-hero.png');
   background-size: cover;
-  /* height: 768px; */
-  height: 50vh;
+  height: 60vh;
   display: flex;
   background-repeat: no-repeat;
+  background-position: -200px;
 
-  @include responsive(max-width, 500px) {
-    background-position: -200px;
+  @include responsive(min-width, 500px) {
+    background-position: 0;
   }
 
-  @include responsive(max-width, 1400px) {
-    height: 60vh;
+  @include responsive(min-width, 1500px) {
+    height: 50vh;
   }
+
+  @include responsive(min-width, 1800px) {
+    background-image: url('../images/final-hero@2x.png');
+  }
+
 }
 
 /* footer */
@@ -24,7 +29,7 @@
   color: #000000;
 
   .wrap {
-    padding: 25px;
+    padding: 25px 0 25px 0;
   }
 
   @include responsive(min-width, 1000px) {
