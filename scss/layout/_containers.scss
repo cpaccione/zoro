@@ -11,6 +11,10 @@
   @include responsive(max-width, 500px) {
     background-position: -200px;
   }
+
+  @include responsive(max-width, 1400px) {
+    height: 60vh;
+  }
 }
 
 /* footer */
