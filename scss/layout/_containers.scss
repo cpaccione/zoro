@@ -1,12 +1,16 @@
 
 /* Hero */
 .hero {
-  background-image: url('../images/zoro-hero.png');
+  background-image: url('../images/final-hero@2x.png');
   background-size: cover;
   /* height: 768px; */
   height: 50vh;
   display: flex;
   background-repeat: no-repeat;
+
+  @include responsive(max-width, 500px) {
+    background-position: -200px;
+  }
 }
 
 /* footer */
