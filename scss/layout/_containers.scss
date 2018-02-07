@@ -1,7 +1,7 @@
 
 /* Hero */
 .hero {
-  background-image: url('../images/final-hero.png');
+  background-image: url('../images/final-hero.jpg');
   background-size: cover;
   height: 60vh;
   display: flex;
@@ -15,11 +15,6 @@
   @include responsive(min-width, 1500px) {
     height: 50vh;
   }
-
-  @include responsive(min-width, 1800px) {
-    background-image: url('../images/final-hero@2x.png');
-  }
-
 }
 
 /* footer */
